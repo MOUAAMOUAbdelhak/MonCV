@@ -1,0 +1,19 @@
+html, button, input, select, textarea {
+	color:#58d68d
+}
+html{
+	font-size:1em;
+	line-height:1.4;
+	background-color:  #FF5733 ;
+}
+#wrapper{
+ height: 320px;
+    width: 900px;
+margin: 0 auto;
+}
+#profile{
+ 
+float: right;
+ border: 2px solid;
+ border-radius: 25px;
+}
