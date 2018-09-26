@@ -13,6 +13,17 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn/font-awesome/4.4.0/css/fontawesome.min.css">
 
 		<script src="http://use.edgefonts.net/aclonica.js"></script>
+		<script type="text/javascript">
+				function affiche() {
+				   document.getElementById('welcomeDiv').style.display =
+		"block";
+				}
+				function hide() {
+				   document.getElementById('welcomeDiv').style.display =
+		"none";
+				}
+		</script>
+
 
 
 		<!--[if lt IE 9]>
@@ -51,8 +62,10 @@
 			</article>
 		</section>
 		 <section>
-  			<dt><h1>EXPÉRIENCE PROFESSIONNELLE :</h1></dt>
-  			<article>
+
+  			<dt><h1>EXPÉRIENCE PROFESSIONNELLE :</h1> <button onclick="affiche()" name="afficher">afficher</button>  <button onclick="hide()" name="hide">cacher</button></dt>
+
+				<article id="welcomeDiv"  class="answer_list">
 				<dd>Stage d’initiation DUT (Un mois) : WEBHELP SALE</dd> <br>
 				<dd>Tache Effectuées : Réalisation d’une application gestion 					d’inventaire en vb6</dd>
 				<br>
