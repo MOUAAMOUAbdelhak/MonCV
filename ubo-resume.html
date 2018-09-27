@@ -15,13 +15,20 @@
 		<script src="http://use.edgefonts.net/aclonica.js"></script>
 		<script type="text/javascript">
 				function affiche() {
-				   document.getElementById('welcomeDiv').style.display =
-		"block";
+				   		document.getElementById('exp').style.display ="block";
+							document.getElementById('for').style.display ="none";
 				}
-				function hide() {
-				   document.getElementById('welcomeDiv').style.display =
-		"none";
+				function affichefo() {
+				   document.getElementById('for').style.display ="block";
+					 document.getElementById('exp').style.display ="none";
 				}
+				function hidefo() {
+				   document.getElementById('for').style.display ="none";
+				}
+
+						document.getElementById('for').style.display="none";
+						document.getElementById('exp').style.display="none";
+
 		</script>
 
 
@@ -30,10 +37,10 @@
 
 
 -->
-	</head> <body>
+</head> <bod onload="cacher()">
 		<div id="wrapper">
 
-		<img src="img.png" alt="Smiley face"  id="profile">
+		<img src="img.jpg" alt="Smiley face"  id="profile" width="290px" height="290px">
 		<h1 id="nomcv">MOUAAMOU</h1>
 		<h2>Etudiant master Développement lOgiciel des systémes d'information </h2>
 		<i class="icon-camera-recto"></i>
@@ -45,8 +52,8 @@
 		</address>
 		<h3>Marocain</h3>
 		 <section>
-  			<dt><h1>FORMATION</h1></dt>
-  			<article>
+  			<dt><div class="inner"><h1>FORMATION</h1></div> <div class="inner"><button onclick="affichefo()"  name="afficher"><img src="add.png"></button></div></dt>   <!--<button onclick="hidefo()" name="hide">cacher</button>-->
+  			<article id="for"  class="answer_list">
 				<dd>2017-2018 : 1ère année Cycle Master à La faculté des sciences 						Semlalia,MARRAKECH</dd>
 				<dd>Option : Ingénierie Des Systèmes d’Information</dd>
 				<br>
@@ -63,9 +70,9 @@
 		</section>
 		 <section>
 
-  			<dt><h1>EXPÉRIENCE PROFESSIONNELLE :</h1> <button onclick="affiche()" name="afficher">afficher</button>  <button onclick="hide()" name="hide">cacher</button></dt>
+  			<dt><div class="inner"><h1>EXPÉRIENCE PROFESSIONNELLE :</h1></div><div class="inner"> <button onclick="affiche()" name="afficher"><img src="add.png"></button></div>  <!--<button onclick="hide()" name="hide">cacher</button>--></dt>
 
-				<article id="welcomeDiv"  class="answer_list">
+				<article id="exp"  class="answer_list">
 				<dd>Stage d’initiation DUT (Un mois) : WEBHELP SALE</dd> <br>
 				<dd>Tache Effectuées : Réalisation d’une application gestion 					d’inventaire en vb6</dd>
 				<br>
