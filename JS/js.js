@@ -1,10 +1,19 @@
-<script type="text/javascript">
-		function affiche() {
-		   document.getElementById('welcomeDiv').style.display =
-"block";
+function showElement(x){
+
+        var divid=document.getElementById(x);
+
+		var visibles = document.getElementsByClassName("visible");
+
+		[].forEach.call(visibles, function (i) {i.classList.remove("visible");
+			if(i!==divid)
+			i.style.display="none";
+});
+
+		if(divid.style.display == 'none'){
+		divid.classList.add("visible");
+		divid.style.display='inline';}
+		else{
+
+		divid.style.display='none';
 		}
-		function hide() {
-		   document.getElementById('welcomeDiv').style.display =
-"none";
-		}
-</script>
+}

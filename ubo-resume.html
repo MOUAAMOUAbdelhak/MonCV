@@ -13,7 +13,15 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn/font-awesome/4.4.0/css/fontawesome.min.css">
 
 		<script src="http://use.edgefonts.net/aclonica.js"></script>
-		<script type="text/javascript">
+		<script type="text/javascript" src="JS/js.js">
+/*
+		$( '#hideb' ).click(function () {
+						if ( $( '#for' ).is( ":hidden" ) ) {
+									$( '#for'  ).slideDown( "slow" );
+									} else {
+										$('#for').hide();
+}
+});
 				function affiche() {
 				   		document.getElementById('exp').style.display ="block";
 							document.getElementById('for').style.display ="none";
@@ -28,7 +36,7 @@
 
 						document.getElementById('for').style.display="none";
 						document.getElementById('exp').style.display="none";
-
+*/
 		</script>
 
 
@@ -52,8 +60,8 @@
 		</address>
 		<h3>Marocain</h3>
 		 <section>
-  			<dt><div class="inner"><h1>FORMATION</h1></div> <div class="inner"><button onclick="affichefo()"  name="afficher"><img src="add.png"></button></div></dt>   <!--<button onclick="hidefo()" name="hide">cacher</button>-->
-  			<article id="for"  class="answer_list">
+  			<dt><div class="inner"><h1>FORMATION</h1></div> <div class="inner"><button id="hideb" onclick="showElement(0)"  name="afficher"><img src="add.png"></button></div></dt>   <!--<button onclick="hidefo()" name="hide">cacher</button>-->
+  			<article id="0"  style="display:none;">
 				<dd>2017-2018 : 1ère année Cycle Master à La faculté des sciences 						Semlalia,MARRAKECH</dd>
 				<dd>Option : Ingénierie Des Systèmes d’Information</dd>
 				<br>
@@ -70,9 +78,9 @@
 		</section>
 		 <section>
 
-  			<dt><div class="inner"><h1>EXPÉRIENCE PROFESSIONNELLE :</h1></div><div class="inner"> <button onclick="affiche()" name="afficher"><img src="add.png"></button></div>  <!--<button onclick="hide()" name="hide">cacher</button>--></dt>
+  			<dt><div class="inner"><h1>EXPÉRIENCE PROFESSIONNELLE :</h1></div><div class="inner"> <button onclick="showElement(1)" name="afficher"><img src="add.png"></button></div>  <!--<button onclick="hide()" name="hide">cacher</button>--></dt>
 
-				<article id="exp"  class="answer_list">
+				<article id="1"  style="display:none;">
 				<dd>Stage d’initiation DUT (Un mois) : WEBHELP SALE</dd> <br>
 				<dd>Tache Effectuées : Réalisation d’une application gestion 					d’inventaire en vb6</dd>
 				<br>
