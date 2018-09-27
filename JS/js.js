@@ -10,10 +10,15 @@ function showElement(x){
 });
 
 		if(divid.style.display == 'none'){
-		divid.classList.add("visible");
-		divid.style.display='inline';}
+      setTimeout(function(){
+        divid.classList.add("visible");
+        divid.style.display='inline';
+      }, 1000);
+	}
 		else{
+      setTimeout(function(){
+    		divid.style.display='none';
+      }, 1000);
 
-		divid.style.display='none';
 		}
 }
